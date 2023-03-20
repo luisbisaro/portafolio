@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+
+    margin-left: 80px;
+    margin-top: 80px;
+    transition: margin-left 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+main {
+    padding: 10px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #1783db;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 200;
+}
+
+.secciones {
+    padding-left: 20px;
+    padding-right: 100px;
+    text-align: justify;
+}
+
+.icon__menu {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(10px);
+    font-size: small;
+}
+.icon__menu i:hover {
+
+    transform: scale(1.5);
+    filter: invert(100%);
+
+} 
+
+.icon__menu i {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.icon__menu h1 {
+    font-style: italic;
+    font-size: 20px;
+    margin-left: 120px;
+    color: rgb(255, 253, 253);
+}
+
+.menu__side {
+    width: 80px;
+    /* ancho del menu antes de seleecionar*/
+    height: 100%;
+    background: #1783db;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 20px solid #1783db;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.menu__side_d {
+    width: 80px;
+    /* ancho del menu antes de seleecionar*/
+    height: 100%;
+    background: #1783db;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: white;
+    font-size: 18px;
+    z-index: 300;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-left: 20px solid #1783db;
+    transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side_d::-webkit-scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none;
+
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side_d {
+    overflow: auto;
+    -ms-overflow-style: none;
+    /*scrollbar-width: none;*/
+}
+
+/*Ocultar scroll para chrome, safari y opera*/
+.menu__side::-webkit-scrollbar {
+    overflow: auto;
+    -ms-overflow-style: none;
+}
+
+/*Ocultar scroll para IE, Edge y Firefox*/
+.menu__side {
+
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/*----------------------------------------------------------------*/
+.name__page {
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.name__page i {
+    width: 20px;
+    margin-right: 20px;
+}
+
+.options__menu a {
+    color: #ffffffb2;
+    cursor: default;
+    display: block;
+    position: relative;
+    transition: color 300ms;
+}
+
+.options__menu {
+    padding: 20px 30px;
+    position: absolute;
+    top: 80px;
+}
+
+.options__menu a:hover {
+    color: rgb(9, 9, 9);
+}
+
+.options__menu .option {
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.options__menu .option i {
+    width: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.options__menu .option h4 {
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.selected {
+    color: #f9faf9;
+    text-shadow: 1px 1px 2px rgb(253, 252, 252), 0 0 1em rgb(255, 0, 0), 0 0 0.2em blue;
+}
+
+.selected:before {
+    content: '';
+    width: 3px;
+    height: 80%;
+    background: white;
+    position: absolute;
+    top: 10%;
+    left: -30px;
+}
+
+.body_move {
+    margin-left: 250px;
+}
+
+.body_move_d {
+    margin-right: 250px;
+}
+
+/* ancho del menu desplegado */
+.menu__side_move {
+    width: 250px;
+}
+
+.menu__side_move_d {
+    width: 250px;
+}
+
+footer {
+    background: #1783db;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .body_move {
+        margin-left: 10px;
+    }
+
+    .body_move_d {
+        margin-right: 10px;
+    }
+
+    .menu__side_move {
+        width: 80px;
+        left: -60px;
+    }
+
+    .menu__side_move_d {
+        width: 0px;
+        right: 0px;
+    }
+
+    .secciones {
+        padding-left: 40px;
+        padding-right: 100px;
+    }
+
+    footer {
+        padding-left: 50px;
+
+    }
+}

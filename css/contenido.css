@@ -1,0 +1,229 @@
+/* pagina inicio*/
+hr {
+    height: 0px;
+    width: 100%;
+    justify-self: center;
+    background-color: black;
+}
+
+/*****************************************INICIO*****************************************/
+.seccion-inicio {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.texto-inicio {
+
+    text-align: right;
+    border-color: black;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 30px;
+}
+
+.foto-perfil {
+    border: 10px solid black;
+}
+
+.foto-perfil:hover {
+    filter: grayscale(1) blur(1px);
+    border-radius: 20%;
+}
+
+/*****************************************SKILLS*****************************************/
+
+.seccion-skills {
+    flex: 1;
+    padding: 20px;
+    overflow: auto;
+    /* para que no salgan las barras laterales */
+    margin-bottom: 80px;
+}
+
+.seccion-skills div {
+    display: flex;
+    justify-content: center;
+}
+
+/* tamaño de las imagenes */
+.imagen-skills {
+    width: 120px;
+    height: 120px;
+    display: flex-rows;
+    margin-inline: 20px;
+}
+
+.imagen-skills:hover {
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+}
+
+/*****************************************FORMACION*****************************************/
+.seccion-formacion {
+
+    padding: 20px;
+    overflow: auto;
+    /* para que no salgan las barras laterales */
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.seccion-formacion div {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+
+}
+
+.seccion-formacion figure {
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+
+}
+
+.seccion-formacion figcaption {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 150px;
+    text-align: center;
+}
+
+
+.imagen-formacion {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+}
+
+/* tamaño de las imagenes */
+
+.imagen-formacion:hover {
+    -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
+    box-shadow: 0px 0px 15px 15px #ec731e;
+}
+
+/*****************************************PROYECTOS*****************************************/
+.seccion-proyectos {
+    padding: 20px;
+    overflow: auto;
+    /* para que no salgan las barras laterales */
+    margin-bottom: 80px;
+ 
+}
+.seccion-proyectos div {
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+.seccion-proyectos img{
+    width: 30%;
+    height: 30%;
+    margin-inline: 20px;
+}
+
+.seccion-proyectos h2{
+
+    font-size: 12px;
+    text-align: center;
+
+}
+
+.seccion-proyectos span.experience-repo button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    border: 1px solid #2A7AE4;
+    color: #2A7AE4;
+    box-sizing: border-box;
+}
+
+.seccion-proyectos span.experience-demo button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 16px;
+    margin-left: 16px;
+    border: 1px solid #2A7AE4;
+    background: #2A7AE4;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************CONTACTO*****************************************/
+
+.seccion-contacto {
+    padding: 20px;
+    overflow: auto;
+    /* para que no salgan las barras laterales */
+    margin-bottom: 80px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    padding-top: 10px;
+    font-size: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.form input {
+    padding: 10px;
+    width: 90%;
+    display: table-cell;
+    margin-bottom: 10px;
+    border-color: #1783db;
+}
+
+.form textarea {
+    padding: 10px;
+    width: 90%;
+    border-color: #1783db;
+    ;
+}
+
+.form button {
+    margin-top: 10px;
+    width: 40%;
+    height: 10%;
+    background-color: #2A7AE4;
+    color: white;
+    font-size: 14px;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+
+/*****************************************FOOTER*****************************************/
+
+.footer {
+    position: fixed;
+
+
+}
